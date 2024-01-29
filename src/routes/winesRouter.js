@@ -1,8 +1,8 @@
 import express from "express";
-import { getAll } from "../controllers/winesController.js";
+import winesController from "../controllers/winesController.js";
 
 const router = express.Router();
 
-router.get("/", getAll);
+router.get("/", winesController.getAll);
 
 export default router;
